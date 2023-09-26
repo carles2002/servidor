@@ -1,16 +1,16 @@
 <?php
-/*Si no has iniciado sesión, no puedes entrar a la página de inicio
-session_start();
+//Si no has iniciado sesión, no puedes entrar a la página de inicio
+/*session_start();
 if(!isset($_SESSION['usuario'])){
     header("Location:../user/login.php");
 }else{
     if($_SESSION['ususario']=="ok"){
 
     }
-$nombre = $_SESSION['nombre'];
-echo "El nombre del usuario es: " . $nombre;
+    $nombre = $_SESSION['nombre'];
+    echo "El nombre del usuario es: " . $nombre;
 }*/
-
+session_start();
 ?>
 
 <!doctype html>
@@ -30,7 +30,8 @@ echo "El nombre del usuario es: " . $nombre;
         <?php $url="http://".$_SERVER['HTTP_HOST']?>
         <nav class="navbar navbar-expand navbar-light bg-light">
             <div class="nav navbar-nav">
-                <a class="nav-item nav-link active" href="#"> Bienvenido, Usuario </a>
+                <a class="nav-item nav-link active" href="#"> Bienvenido, 
+                <?php echo $_SESSION['usuario']; ?> </a>
                 <a class="nav-item nav-link" href="<?php echo $url;?>/user/inicio.php">Inicio</a>
                 <a class="nav-item nav-link" href="<?php echo $url;?>/user/cerrar.php">Cerrar sesión</a>
                 <a class="nav-item nav-link" href="<?php echo $url;?>">Ver sitio web</a>
