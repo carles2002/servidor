@@ -29,5 +29,5 @@ if ($result->num_rows > 0) {
 $conn->close();
 
 // Devuelve el resultado como un JSON
-echo json_encode($row);
+//echo json_encode($row);
 ?>
