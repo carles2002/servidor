@@ -6,7 +6,7 @@ session_start();
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>MEDIDAS BEACON cmarfem</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -34,26 +34,25 @@ session_start();
             <div class="col-md-12">
                 <div class="jumbotron">
                     <h1 class="display-3">Mediciones</h1>
-                    <p class="lead">La medición de su sonda es: </p>
                     <hr class="my-2">
-                    <p>More info</p>
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-                    </p>
+                   
                     <?php
-                    // Incluye la conexión y datos desde el archivo db_connection.php
+                    // Incluye la conexión y datos desde el archivo controlador.php
                     include '../bd/controlador.php';
 
                     if (!empty($row)) {
                         echo "<h2>Última entrada de la tabla medidas:</h2>";
                         echo "<p>ID: " . $row["id"] . "</p>";
-                        echo "<p>Humedad (Contador de ciclos): " . $row["Humedad"] . "</p>"; // Reemplaza "campo1" con el nombre de tu columna
-                        echo "<p>Temperatura (Numero colocado a mano): " . $row["Temperatura"] . "</p>"; // Reemplaza "campo2" con el nombre de tu columna
+                        echo "<p>Humedad (Contador de ciclos): " . $row["Humedad"] . "</p>"; 
+                        echo "<p>Temperatura (Numero colocado a mano): " . $row["Temperatura"] . "</p>"; 
                         // Agrega más campos según sea necesario
                     } else {
                         echo "<p>No se encontraron entradas en la tabla medicion.</p>";
                     }
                     ?>
+                     <p class="lead">
+                        <a class="btn btn-success btn-lg" href="../index.php" role="button">SALIR</a>
+                    </p>
                 </div>
             </div>
         </div>
