@@ -20,7 +20,7 @@ if ($conn->connect_error) {
 }
 
 // Prepara la consulta SQL para insertar los datos en la tabla
-$sql = "INSERT INTO testB (major, minor) VALUES ('$clave1', '$clave2')";
+$sql = "INSERT INTO medicion (Humedad, Temperatura) VALUES ('$clave1', '$clave2')";
 
 if ($conn->query($sql) === TRUE) {
     // Los datos se insertaron correctamente en la base de datos

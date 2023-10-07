@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // Realiza la consulta SQL para obtener la última entrada de la tabla testB
-$sql = "SELECT * FROM testB ORDER BY id DESC LIMIT 1"; // Ordena por ID de forma descendente y limita a 1 resultado
+$sql = "SELECT * FROM medicion ORDER BY id DESC LIMIT 1"; // Ordena por ID de forma descendente y limita a 1 resultado
 
 $result = $conn->query($sql);
 

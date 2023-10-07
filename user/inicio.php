@@ -45,13 +45,13 @@ session_start();
                     include '../bd/controlador.php';
 
                     if (!empty($row)) {
-                        echo "<h2>Última entrada de la tabla testB:</h2>";
-                        echo "<p>ID: " . $row["ID"] . "</p>";
-                        echo "<p>Campo1: " . $row["major"] . "</p>"; // Reemplaza "campo1" con el nombre de tu columna
-                        echo "<p>Campo2: " . $row["minor"] . "</p>"; // Reemplaza "campo2" con el nombre de tu columna
+                        echo "<h2>Última entrada de la tabla medidas:</h2>";
+                        echo "<p>ID: " . $row["id"] . "</p>";
+                        echo "<p>Humedad (Contador de ciclos): " . $row["Humedad"] . "</p>"; // Reemplaza "campo1" con el nombre de tu columna
+                        echo "<p>Temperatura (Numero colocado a mano): " . $row["Temperatura"] . "</p>"; // Reemplaza "campo2" con el nombre de tu columna
                         // Agrega más campos según sea necesario
                     } else {
-                        echo "<p>No se encontraron entradas en la tabla testB.</p>";
+                        echo "<p>No se encontraron entradas en la tabla medicion.</p>";
                     }
                     ?>
                 </div>
