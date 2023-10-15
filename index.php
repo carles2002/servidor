@@ -11,8 +11,14 @@
                     <p class="lead">
                         <a class="btn btn-success btn-lg " href="../user/login.php" role="button"> LOGIN NORMAL</a>
                     </p>
+                    <hr class="my-2">
+                    <hr class="my-2">
+                    <hr class="my-2">
                     <p class="lead">
                         <a class="btn btn-success btn-lg " href="../tests/test_bd.php" role="button"> TEST BD1</a>
+                    </p>
+                    <p class="lead">
+                        <a class="btn btn-success btn-lg " href="../tests/test_bd_Usuarios.php" role="button"> TEST BD2</a>
                     </p>
                 </div>
 <?php include("template/pie.php"); ?>
